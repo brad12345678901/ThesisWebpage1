@@ -1,0 +1,90 @@
+body{
+	margin:0;
+	background-image:url('../css/images/San-Mateo-Philippines-Rizal-102775-1200x900.jpg');
+}
+#mapview{
+	height: 100%;
+	margin:0;
+}
+#mapview .container {
+	display:flex;  /* Enable flexbox for the container */  /* Set the container height to 100% viewport height */
+}
+#mapview .container .vertical-main-menu{
+	flex-direction: column;
+	max-width: 75%;
+	background: linear-gradient(180deg, rgba(0,36,107,1) 75%, rgba(0,36,107,0.75) 100%);
+}
+#mapview .container .vertical-main-menu #Title{
+	background-color: #0639EF;
+	color:rgb(240, 243, 70);
+	text-align: center;
+	font-size:x-large; font-weight: 700;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 15px;
+}
+
+#mapview .container .vertical-main-menu .vertical-selection{
+	height:100vh;
+	align-content: center;
+}
+
+
+#mapview .vertical-main-menu .vertical-selection nav{
+	background-color: #c8cae6ea;
+	border-radius: 1rem;
+	align-content: center;
+	text-align: center;
+	margin:20px;
+	box-shadow: 0 0 1rem #37373fea;
+}
+#mapview .vertical-main-menu .vertical-selection nav p .legend-button{
+	width:50%;
+	height: 3rem;
+	color:rgb(14, 3, 110); font-size: larger; font-weight:700;
+	text-align: center;
+	background-color:transparent;
+	font-family: Arial, Helvetica, sans-serif;
+	border:none;
+	border-bottom: solid rgb(14, 3, 110);
+	transition:ease-out 0.2s;
+}
+#mapview .vertical-main-menu .vertical-selection nav p .legend-button:hover{
+	background-color:rgb(225, 245, 46);
+	border-radius: 2rem;
+	transition:ease-in 0.2s;
+	border:none;
+}
+#mapview .vertical-main-menu .vertical-selection nav p .legend-button:active{
+	background-color:rgb(160, 175, 27);
+	transition:none;
+}
+#mapview .Map-Container{
+	flex: 1;
+}
+#mapview .Map-View{
+	display:flex;
+	flex:1;
+	height:75%;
+}
+#mapview .stats-overlay{
+	display:flex;
+	height: 25%;
+	max-height: inherit;
+	background: linear-gradient(180deg, rgba(0,36,107,1) 15%, rgba(0,36,107,0.75) 100%);
+	font-family: Arial, Helvetica, sans-serif;
+	align-self: flex-end;
+	flex-direction: column;
+}
+#mapview .stats-overlay .stats-interface{
+	background: rgb(255, 255, 255);
+	margin:1%;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+#history{
+	height: 100vh;
+	background-color: white;
+}
+
+/**/

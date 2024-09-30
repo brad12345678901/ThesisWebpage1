@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>San Mateo Waste Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
+    <link rel="stylesheet" href="css/qgis2web.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <section id = 'mapview'>
+        <div class="container">
+            <div class="vertical-main-menu">
+                <header id="Title">San Mateo Waste Routing</header>
+                <div class="vertical-selection">
+                    <nav>
+                        <p><button class="legend-button" id ='routes'>Routes</button></p>
+                        <p><button class="legend-button" id ='road-layer'>Roads</button></p>
+                        <p><button class="legend-button" id ='site_layer'>Sites</button></p>
+                    </nav>
+                </div>
+            </div>
+            <div class = "Map-Container">
+                <div class="Map-View" id = "map">
+                    <script src="js/qgis2web_expressions.js"></script>
+                    <script src="js/leaflet.js"></script>
+                    <script src="js/L.Control.Layers.Tree.min.js"></script>
+                    <script src="js/multi-style-layer.js"></script>
+                    <script src="js/leaflet.rotatedMarker.js"></script>
+                    <script src="js/leaflet.pattern.js"></script>
+                    <script src="js/leaflet-hash.js"></script>
+                    <script src="js/Autolinker.min.js"></script>
+                    <script src="js/rbush.min.js"></script>
+                    <script src="js/labelgun.min.js"></script>
+                    <script src="js/labels.js"></script>
+                    <script src="data/RoadLayerV3_1.js"></script>
+                    <script src="source.js"></script>
+                </div>
+                <div class = "stats-overlay">
+                    <div class = "stats-interface">
+                        <p>Statistics Page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "history">
+        
+    </section>
+</body>
+</html>
